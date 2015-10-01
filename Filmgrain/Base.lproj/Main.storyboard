@@ -25,7 +25,7 @@
         <!--Root View Controller-->
         <scene sceneID="I7G-AJ-BVq">
             <objects>
-                <tableViewController id="7Yt-c2-lxj" sceneMemberID="viewController">
+                <tableViewController id="7Yt-c2-lxj" customClass="CamerasViewController" customModule="Filmgrain" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="QcF-q8-KkG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,6 +142,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.80392156862745101" green="0.0" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="GyG-dD-Z0u" kind="unwind" unwindAction="unwindToTable:" id="mv9-0N-sk9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -156,6 +159,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tZ-Sc-9XI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GyG-dD-Z0u" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="968.5" y="-55.5"/>
         </scene>
@@ -210,6 +214,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.80392156859999997" green="0.0" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vxJ-BQ-QHV" kind="unwind" unwindAction="unwindToTable:" id="hSe-zD-tDv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -226,6 +233,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fI4-wt-lkf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vxJ-BQ-QHV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="968.5" y="712.5"/>
         </scene>
