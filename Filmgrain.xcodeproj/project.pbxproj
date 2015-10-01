@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2F6BFF1BBDAAEF00F805C9 /* CameraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2F6BFE1BBDAAEF00F805C9 /* CameraTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		0A3CF2D81BB8CF0D00D389CB /* Concourse C3 Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CF2D41BB8CF0D00D389CB /* Concourse C3 Regular.otf */; settings = {ASSET_TAGS = (); }; };
 		0A3CF2D91BB8CF0D00D389CB /* Concourse T3 Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CF2D51BB8CF0D00D389CB /* Concourse T3 Italic.otf */; settings = {ASSET_TAGS = (); }; };
 		0A3CF2DA1BB8CF0D00D389CB /* Concourse T3 Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CF2D61BB8CF0D00D389CB /* Concourse T3 Regular.otf */; settings = {ASSET_TAGS = (); }; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2F6BFE1BBDAAEF00F805C9 /* CameraTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraTableViewController.swift; sourceTree = "<group>"; };
 		0A3CF2D41BB8CF0D00D389CB /* Concourse C3 Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Concourse C3 Regular.otf"; sourceTree = "<group>"; };
 		0A3CF2D51BB8CF0D00D389CB /* Concourse T3 Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Concourse T3 Italic.otf"; sourceTree = "<group>"; };
 		0A3CF2D61BB8CF0D00D389CB /* Concourse T3 Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Concourse T3 Regular.otf"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				0A5883A01BB34A6F0003BB17 /* AppDelegate.swift */,
 				0A5883A21BB34A6F0003BB17 /* ViewController.swift */,
 				0A5883A41BB34A6F0003BB17 /* Main.storyboard */,
+				0A2F6BFE1BBDAAEF00F805C9 /* CameraTableViewController.swift */,
 				0A5883A71BB34A6F0003BB17 /* Assets.xcassets */,
 				0A5883A91BB34A6F0003BB17 /* LaunchScreen.storyboard */,
 				0A5883AC1BB34A6F0003BB17 /* Info.plist */,
@@ -281,6 +284,7 @@
 			files = (
 				0A5883A31BB34A6F0003BB17 /* ViewController.swift in Sources */,
 				0A5883A11BB34A6F0003BB17 /* AppDelegate.swift in Sources */,
+				0A2F6BFF1BBDAAEF00F805C9 /* CameraTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
