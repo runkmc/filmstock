@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    // Override point for customization after application launch.
+    // Override point for customization after application launch.Normal
+    let font = [NSFontAttributeName: UIFont(name: "ConcourseT3", size: 18)!, NSForegroundColorAttributeName: UIColor.whiteColor()]
+    UIBarButtonItem.appearance().setTitleTextAttributes(font, forState: .Normal)
+    UIBarButtonItem.appearance().setTitleTextAttributes(font, forState: .Highlighted)
+    UIBarButtonItem.appearance().setTitleTextAttributes(font, forState: .Selected)
+    UIBarButtonItem.appearance().setTitleTextAttributes(font, forState: .Disabled)
+
     return true
   }
 
