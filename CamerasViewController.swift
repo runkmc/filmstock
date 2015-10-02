@@ -38,6 +38,7 @@ class CamerasViewController: UITableViewController {
       return }
     else {
     CameraStore.store += [Camera(name: newName)]
+    CameraStore.save()
     tableView.reloadData()
     }
   }
@@ -110,6 +111,7 @@ class CamerasViewController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             CameraStore.store.removeAtIndex(indexPath.row)
+            CameraStore.save()
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -121,6 +123,7 @@ class CamerasViewController: UITableViewController {
         let movingCamera = CameraStore.store[fromIndexPath.row]
         CameraStore.store.removeAtIndex(fromIndexPath.row)
         CameraStore.store.insert(movingCamera, atIndex: toIndexPath.row)
+        CameraStore.save()
     }
 
     /*

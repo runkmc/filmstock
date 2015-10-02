@@ -8,15 +8,33 @@
 
 import Foundation
 
-class Camera {
+class Camera: NSObject, NSCoding {
   
   var name: String
   var notes: String
   var loaded: Bool
   
-  init(name: String) {
+  init(name: String, notes: String, loaded: Bool) {
     self.name = name
-    notes = "empty"
-    loaded = false
+    self.notes = notes
+    self.loaded = loaded
+  }
+  
+  convenience init(name: String) {
+    self.init(name: name, notes: "empty", loaded:false)
+  }
+  
+  func encodeWithCoder(aCoder: NSCoder) {
+    aCoder.encodeObject(self.name, forKey: "name")
+    aCoder.encodeBool(self.loaded, forKey: "loaded")
+    aCoder.encodeObject(self.notes, forKey: "notes")
+  }
+  
+  required convenience init?(coder aDecoder: NSCoder) {
+    let n = aDecoder.decodeObjectForKey("name") as! String
+    let l = aDecoder.decodeBoolForKey("loaded")
+    let no = aDecoder.decodeObjectForKey("notes") as! String
+    
+    self.init(name:n, notes:no, loaded:l)
   }
 }
