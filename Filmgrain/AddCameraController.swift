@@ -18,10 +18,10 @@ class AddCameraController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createButton.layer.borderWidth = 1
-        createButton.layer.cornerRadius = 15
+        createButton.layer.cornerRadius = 22
         createButton.layer.borderColor = UIColor.init(red:0.086, green:0.651, blue:0.341, alpha:1.000).CGColor
         cancelButton.layer.borderWidth = 1
-        cancelButton.layer.cornerRadius = 15
+        cancelButton.layer.cornerRadius = 22
         cancelButton.layer.borderColor = UIColor.init(red:0.804, green:0.000, blue:0.078, alpha:1.000).CGColor
 
         // Do any additional setup after loading the view.

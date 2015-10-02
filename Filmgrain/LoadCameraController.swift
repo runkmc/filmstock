@@ -33,15 +33,22 @@ class LoadCameraController: UIViewController {
         super.viewDidLoad()
         cameraName.text = camera?.name
         loadButton.layer.borderWidth = 1
-        loadButton.layer.cornerRadius = 15
+        loadButton.layer.cornerRadius = 22
         loadButton.layer.borderColor = UIColor.init(red:0.086, green:0.651, blue:0.341, alpha:1.000).CGColor
         cancelButton.layer.borderWidth = 1
-        cancelButton.layer.cornerRadius = 15
+        cancelButton.layer.cornerRadius = 22
         cancelButton.layer.borderColor = UIColor.init(red:0.804, green:0.000, blue:0.078, alpha:1.000).CGColor
  
-
+        let tapper = UITapGestureRecognizer.init(target: self, action: "dismiss")
+        tapper.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tapper)
+    
         // Do any additional setup after loading the view.
     }
+  
+  func dismiss() {
+    self.view.endEditing(true)
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

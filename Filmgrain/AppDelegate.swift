@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.Normal
+    UINavigationBar.appearance().tintColor = UIColor.whiteColor() 
     let font = [NSFontAttributeName: UIFont(name: "ConcourseT3", size: 18)!, NSForegroundColorAttributeName: UIColor.whiteColor()]
     UIBarButtonItem.appearance().setTitleTextAttributes(font, forState: .Normal)
     UIBarButtonItem.appearance().setTitleTextAttributes(font, forState: .Highlighted)

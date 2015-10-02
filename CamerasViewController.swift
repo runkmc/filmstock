@@ -17,6 +17,10 @@ class CamerasViewController: UITableViewController {
       navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "ConcourseT4", size: 20)!]
       self.navigationItem.leftBarButtonItem = self.editButtonItem()
   }
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    tableView.reloadData()
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -92,6 +96,14 @@ class CamerasViewController: UITableViewController {
       let cam = sender as! Camera
       let dest = segue.destinationViewController as! LoadCameraController
       dest.camera = cam
+    }
+    
+    if segue.identifier == "cameraDetails" {
+      if let cell = sender as? UITableViewCell {
+        let cam = CameraStore.store[(tableView.indexPathForCell(cell)?.row)!]
+        let dest = segue.destinationViewController as! CameraDetailsController
+        dest.camera = cam
+      }
     }
   }
   

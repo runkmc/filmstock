@@ -17,8 +17,10 @@
             <string>ConcourseT3</string>
             <string>ConcourseT3</string>
             <string>ConcourseT3</string>
+            <string>ConcourseT3</string>
         </mutableArray>
         <mutableArray key="Concourse T4 Regular.otf">
+            <string>ConcourseT4</string>
             <string>ConcourseT4</string>
             <string>ConcourseT4</string>
         </mutableArray>
@@ -29,12 +31,12 @@
             <objects>
                 <tableViewController id="7Yt-c2-lxj" customClass="CamerasViewController" customModule="Filmgrain" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" id="QcF-q8-KkG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cameracell" rowHeight="85" id="58r-hB-Jrv" customClass="CameraCell" customModule="Filmgrain" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="85"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="58r-hB-Jrv" id="4c4-ca-qEV">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
@@ -65,11 +67,11 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5du-TV-rqI">
-                                            <rect key="frame" x="16" y="37" width="255" height="17"/>
+                                            <rect key="frame" x="17" y="37" width="254" height="19"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="255" id="8zL-6x-vT9"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="ConcourseT3" family="Concourse T3" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="ConcourseT3" family="Concourse T3" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="default">
@@ -84,7 +86,7 @@
                                         <constraint firstItem="aia-iL-ZXP" firstAttribute="top" secondItem="4c4-ca-qEV" secondAttribute="topMargin" id="HTM-Oj-7yo"/>
                                         <constraint firstItem="5du-TV-rqI" firstAttribute="top" secondItem="aia-iL-ZXP" secondAttribute="bottom" constant="4" id="MgC-01-JfK"/>
                                         <constraint firstItem="qtc-if-t3a" firstAttribute="leading" secondItem="aia-iL-ZXP" secondAttribute="trailing" constant="8" id="UXi-00-Fed"/>
-                                        <constraint firstItem="5du-TV-rqI" firstAttribute="leading" secondItem="4c4-ca-qEV" secondAttribute="leadingMargin" constant="8" id="X7H-LL-7BF"/>
+                                        <constraint firstItem="5du-TV-rqI" firstAttribute="leading" secondItem="4c4-ca-qEV" secondAttribute="leadingMargin" constant="9" id="X7H-LL-7BF"/>
                                         <constraint firstItem="qtc-if-t3a" firstAttribute="centerY" secondItem="4c4-ca-qEV" secondAttribute="centerY" id="bWk-YI-OEX"/>
                                         <constraint firstItem="qtc-if-t3a" firstAttribute="leading" secondItem="5du-TV-rqI" secondAttribute="trailing" constant="8" id="dqb-w4-Hee"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="qtc-if-t3a" secondAttribute="trailing" constant="8" id="mFQ-ww-ucS"/>
@@ -94,6 +96,7 @@
                                     <outlet property="loadingButton" destination="qtc-if-t3a" id="8ek-Z8-epk"/>
                                     <outlet property="name" destination="aia-iL-ZXP" id="G8w-cT-3Sj"/>
                                     <outlet property="notes" destination="5du-TV-rqI" id="6IQ-Hl-fPo"/>
+                                    <segue destination="ABQ-0P-BUY" kind="show" identifier="cameraDetails" id="R6n-zz-f8P"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -117,6 +120,83 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fZ-dt-Rwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="466.5" y="56.5"/>
+        </scene>
+        <!--Camera Details Controller-->
+        <scene sceneID="fJi-Y7-ewR">
+            <objects>
+                <tableViewController id="ABQ-0P-BUY" customClass="CameraDetailsController" customModule="Filmgrain" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="rBt-8x-IQK">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Camera" id="yL3-kO-1AL">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JkS-wV-Ge8">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JkS-wV-Ge8" id="260-JA-Z74">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zyg-1y-9y4">
+                                                    <rect key="frame" x="18" y="8" width="349" height="27"/>
+                                                    <color key="tintColor" red="0.46274509800000002" green="0.79215686269999996" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ConcourseT4" family="Concourse T4" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zyg-1y-9y4" firstAttribute="leading" secondItem="260-JA-Z74" secondAttribute="leadingMargin" constant="10" id="1r8-I1-fHn"/>
+                                                <constraint firstItem="zyg-1y-9y4" firstAttribute="top" secondItem="260-JA-Z74" secondAttribute="topMargin" id="HLC-vV-XRJ"/>
+                                                <constraint firstItem="zyg-1y-9y4" firstAttribute="bottom" secondItem="260-JA-Z74" secondAttribute="bottomMargin" id="SrU-JM-3Ye"/>
+                                                <constraint firstItem="zyg-1y-9y4" firstAttribute="trailing" secondItem="260-JA-Z74" secondAttribute="trailingMargin" id="meE-Xz-b8E"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Notes" id="rJ7-z3-0Fh">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="aTl-QZ-cWu">
+                                        <rect key="frame" x="0.0" y="145" width="375" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aTl-QZ-cWu" id="g18-BE-Eht">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5qi-TY-46E">
+                                                    <rect key="frame" x="18" y="8" width="349" height="111"/>
+                                                    <color key="tintColor" red="0.46666666670000001" green="0.80000000000000004" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ConcourseT3" family="Concourse T3" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5qi-TY-46E" firstAttribute="top" secondItem="g18-BE-Eht" secondAttribute="topMargin" id="4UO-0V-kBQ"/>
+                                                <constraint firstItem="5qi-TY-46E" firstAttribute="trailing" secondItem="g18-BE-Eht" secondAttribute="trailingMargin" id="N96-MG-C2T"/>
+                                                <constraint firstItem="5qi-TY-46E" firstAttribute="leading" secondItem="g18-BE-Eht" secondAttribute="leadingMargin" constant="10" id="dHP-gF-FUL"/>
+                                                <constraint firstItem="5qi-TY-46E" firstAttribute="bottom" secondItem="g18-BE-Eht" secondAttribute="bottomMargin" id="etW-W4-dSb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ABQ-0P-BUY" id="WfQ-Iz-AKa"/>
+                            <outlet property="delegate" destination="ABQ-0P-BUY" id="pjg-L3-PwV"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="nameField" destination="zyg-1y-9y4" id="os8-w2-Z3R"/>
+                        <outlet property="notesField" destination="5qi-TY-46E" id="iP2-Ub-tNU"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zNX-X3-Pc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086.5" y="-564.5"/>
         </scene>
         <!--Load Camera Controller-->
         <scene sceneID="Pbd-Rj-zP5">
@@ -144,9 +224,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAq-nd-oRC">
-                                <rect key="frame" x="24" y="294" width="327" height="30"/>
+                                <rect key="frame" x="24" y="294" width="327" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="DIQ-IX-TED"/>
+                                    <constraint firstAttribute="height" constant="44" id="DIQ-IX-TED"/>
                                     <constraint firstAttribute="width" constant="327" id="hp7-0u-dqg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ConcourseT3" family="Concourse T3" pointSize="15"/>
@@ -165,6 +245,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ws-xU-XNS">
                                 <rect key="frame" x="24" y="132" width="327" height="128"/>
                                 <color key="backgroundColor" red="0.9608531259726113" green="0.9608531259726113" blue="0.9608531259726113" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.46274509803921571" green="0.792156862745098" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="ITJ-L3-6J1"/>
                                     <constraint firstAttribute="width" constant="327" id="V5F-Lu-bu0"/>
@@ -178,9 +259,9 @@
                                 </variation>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg2-bZ-inn">
-                                <rect key="frame" x="24" y="332" width="327" height="30"/>
+                                <rect key="frame" x="24" y="346" width="327" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="eeV-ZA-Rje"/>
+                                    <constraint firstAttribute="height" constant="44" id="eeV-ZA-Rje"/>
                                     <constraint firstAttribute="width" constant="327" id="kE4-qy-WMY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ConcourseT3" family="Concourse T3" pointSize="15"/>
@@ -225,7 +306,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tZ-Sc-9XI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="GyG-dD-Z0u" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="968.5" y="-55.5"/>
+            <point key="canvasLocation" x="1066.5" y="172.5"/>
         </scene>
         <!--Add Camera Controller-->
         <scene sceneID="YHa-dz-pYb">
@@ -247,10 +328,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eR-2n-3sd">
-                                <rect key="frame" x="24" y="190" width="327" height="30"/>
+                                <rect key="frame" x="24" y="190" width="327" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="327" id="29C-zM-wne"/>
-                                    <constraint firstAttribute="height" constant="30" id="tSt-GD-wWk"/>
+                                    <constraint firstAttribute="height" constant="44" id="tSt-GD-wWk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ConcourseT3" family="Concourse T3" pointSize="15"/>
                                 <state key="normal" title="Create Camera">
@@ -267,6 +348,7 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wJo-RH-ccH">
                                 <rect key="frame" x="24" y="105" width="327" height="30"/>
+                                <color key="tintColor" red="0.46274509800000002" green="0.79215686269999996" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="TO7-j2-DDA"/>
                                     <constraint firstAttribute="width" constant="327" id="apP-kb-L2P"/>
@@ -280,10 +362,10 @@
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5J-HX-skQ">
-                                <rect key="frame" x="24" y="228" width="327" height="30"/>
+                                <rect key="frame" x="24" y="242" width="327" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="327" id="F0F-sf-la1"/>
-                                    <constraint firstAttribute="height" constant="30" id="dSo-NL-fWP"/>
+                                    <constraint firstAttribute="height" constant="44" id="dSo-NL-fWP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ConcourseT3" family="Concourse T3" pointSize="15"/>
                                 <state key="normal" title="Cancel">
@@ -323,17 +405,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fI4-wt-lkf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="vxJ-BQ-QHV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="968.5" y="712.5"/>
+            <point key="canvasLocation" x="848.5" y="966.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UTL-Sk-D9C">
             <objects>
                 <navigationController id="XGL-qw-9X1" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="aK7-6B-tZb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="aK7-6B-tZb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.086274509803921567" green="0.65098039215686276" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.46274509803921571" green="0.792156862745098" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="7Yt-c2-lxj" kind="relationship" relationship="rootViewController" id="cjs-2Q-WNn"/>

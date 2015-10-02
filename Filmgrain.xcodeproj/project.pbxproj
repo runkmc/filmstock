@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0C3A911BBF0DB600574371 /* CameraDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C3A901BBF0DB600574371 /* CameraDetailsController.swift */; settings = {ASSET_TAGS = (); }; };
+		0A0C3A931BBF324F00574371 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C3A921BBF324F00574371 /* iTunesArtwork@2x.png */; settings = {ASSET_TAGS = (); }; };
 		0A3CF2D81BB8CF0D00D389CB /* Concourse C3 Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CF2D41BB8CF0D00D389CB /* Concourse C3 Regular.otf */; settings = {ASSET_TAGS = (); }; };
 		0A3CF2D91BB8CF0D00D389CB /* Concourse T3 Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CF2D51BB8CF0D00D389CB /* Concourse T3 Italic.otf */; settings = {ASSET_TAGS = (); }; };
 		0A3CF2DA1BB8CF0D00D389CB /* Concourse T3 Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CF2D61BB8CF0D00D389CB /* Concourse T3 Regular.otf */; settings = {ASSET_TAGS = (); }; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A0C3A901BBF0DB600574371 /* CameraDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraDetailsController.swift; sourceTree = "<group>"; };
+		0A0C3A921BBF324F00574371 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		0A3CF2D41BB8CF0D00D389CB /* Concourse C3 Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Concourse C3 Regular.otf"; sourceTree = "<group>"; };
 		0A3CF2D51BB8CF0D00D389CB /* Concourse T3 Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Concourse T3 Italic.otf"; sourceTree = "<group>"; };
 		0A3CF2D61BB8CF0D00D389CB /* Concourse T3 Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Concourse T3 Regular.otf"; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		0A5883941BB34A6E0003BB17 = {
 			isa = PBXGroup;
 			children = (
+				0A0C3A921BBF324F00574371 /* iTunesArtwork@2x.png */,
 				0A58839F1BB34A6F0003BB17 /* Filmgrain */,
 				0A5883BF1BB34A6F0003BB17 /* FilmgrainUITests */,
 				0A58839E1BB34A6F0003BB17 /* Products */,
@@ -130,6 +135,7 @@
 			children = (
 				0AC6789C1BBDAD4F00919733 /* CamerasViewController.swift */,
 				0A5883A01BB34A6F0003BB17 /* AppDelegate.swift */,
+				0A0C3A901BBF0DB600574371 /* CameraDetailsController.swift */,
 				0A5883B41BB34A6F0003BB17 /* FilmgrainTests */,
 				0A5883A21BB34A6F0003BB17 /* ViewController.swift */,
 				0A5883A41BB34A6F0003BB17 /* Main.storyboard */,
@@ -230,6 +236,7 @@
 				TargetAttributes = {
 					0A58839C1BB34A6E0003BB17 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = P3HAZUW5GC;
 					};
 					0A5883B01BB34A6F0003BB17 = {
 						CreatedOnToolsVersion = 7.0;
@@ -269,6 +276,7 @@
 				0A3CF2DB1BB8CF0D00D389CB /* Concourse T4 Regular.otf in Resources */,
 				0A3CF2D91BB8CF0D00D389CB /* Concourse T3 Italic.otf in Resources */,
 				0A3CF2D81BB8CF0D00D389CB /* Concourse C3 Regular.otf in Resources */,
+				0A0C3A931BBF324F00574371 /* iTunesArtwork@2x.png in Resources */,
 				0A5883AB1BB34A6F0003BB17 /* LaunchScreen.storyboard in Resources */,
 				0A5883A81BB34A6F0003BB17 /* Assets.xcassets in Resources */,
 				0A5883A61BB34A6F0003BB17 /* Main.storyboard in Resources */,
@@ -301,6 +309,7 @@
 				0AC6789F1BBDB62A00919733 /* Camera.swift in Sources */,
 				0AE640E61BBE48390064B8BF /* LoadCameraController.swift in Sources */,
 				0A5883A31BB34A6F0003BB17 /* ViewController.swift in Sources */,
+				0A0C3A911BBF0DB600574371 /* CameraDetailsController.swift in Sources */,
 				0A5883A11BB34A6F0003BB17 /* AppDelegate.swift in Sources */,
 				0AC6789D1BBDAD4F00919733 /* CamerasViewController.swift in Sources */,
 				0AC6041C1BBE1C590052B384 /* AddCameraController.swift in Sources */,
@@ -444,10 +453,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Filmgrain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.mcgladdery.Filmgrain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinmcgladdery.Filmgrain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -455,10 +468,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Filmgrain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.mcgladdery.Filmgrain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinmcgladdery.Filmgrain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
