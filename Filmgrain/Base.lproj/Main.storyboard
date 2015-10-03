@@ -26,16 +26,16 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Filmgrain-->
+        <!--Filmstock-->
         <scene sceneID="I7G-AJ-BVq">
             <objects>
-                <tableViewController id="7Yt-c2-lxj" customClass="CamerasViewController" customModule="Filmgrain" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="7Yt-c2-lxj" customClass="CamerasViewController" customModule="Filmstock" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" id="QcF-q8-KkG">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cameracell" rowHeight="85" id="58r-hB-Jrv" customClass="CameraCell" customModule="Filmgrain" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cameracell" rowHeight="85" id="58r-hB-Jrv" customClass="CameraCell" customModule="Filmstock" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="58r-hB-Jrv" id="4c4-ca-qEV">
@@ -105,7 +105,7 @@
                             <outlet property="delegate" destination="7Yt-c2-lxj" id="MmE-gD-cUc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Filmgrain" id="fSk-qL-4Dw">
+                    <navigationItem key="navigationItem" title="Filmstock" id="fSk-qL-4Dw">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="rQ2-O8-vSm">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -124,11 +124,11 @@
         <!--Camera Details Controller-->
         <scene sceneID="fJi-Y7-ewR">
             <objects>
-                <tableViewController id="ABQ-0P-BUY" customClass="CameraDetailsController" customModule="Filmgrain" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ABQ-0P-BUY" customClass="CameraDetailsController" customModule="Filmstock" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="rBt-8x-IQK">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Camera" id="yL3-kO-1AL">
@@ -201,7 +201,7 @@
         <!--Load Camera Controller-->
         <scene sceneID="Pbd-Rj-zP5">
             <objects>
-                <viewController id="bx8-WY-IZj" customClass="LoadCameraController" customModule="Filmgrain" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bx8-WY-IZj" customClass="LoadCameraController" customModule="Filmstock" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tGv-h9-Rnc"/>
                         <viewControllerLayoutGuide type="bottom" id="0tZ-Ef-jly"/>
@@ -311,7 +311,7 @@
         <!--Add Camera Controller-->
         <scene sceneID="YHa-dz-pYb">
             <objects>
-                <viewController id="vNn-rF-wPo" customClass="AddCameraController" customModule="Filmgrain" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vNn-rF-wPo" customClass="AddCameraController" customModule="Filmstock" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bZd-HL-je8"/>
                         <viewControllerLayoutGuide type="bottom" id="PlO-Vx-hfL"/>

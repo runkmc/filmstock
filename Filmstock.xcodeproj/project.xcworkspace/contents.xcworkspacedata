@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Filmgrain.xcodeproj">
+      location = "self:/Users/kevin/code/ios/Filmgrain/Filmstock.xcodeproj">
    </FileRef>
 </Workspace>

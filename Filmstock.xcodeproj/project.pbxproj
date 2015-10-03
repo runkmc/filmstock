@@ -52,17 +52,17 @@
 		0A3CF2D51BB8CF0D00D389CB /* Concourse T3 Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Concourse T3 Italic.otf"; sourceTree = "<group>"; };
 		0A3CF2D61BB8CF0D00D389CB /* Concourse T3 Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Concourse T3 Regular.otf"; sourceTree = "<group>"; };
 		0A3CF2D71BB8CF0D00D389CB /* Concourse T4 Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Concourse T4 Regular.otf"; sourceTree = "<group>"; };
-		0A58839D1BB34A6F0003BB17 /* Filmgrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filmgrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A58839D1BB34A6F0003BB17 /* Filmstock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filmstock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5883A01BB34A6F0003BB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A5883A21BB34A6F0003BB17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A5883A51BB34A6F0003BB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A5883A71BB34A6F0003BB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A5883AA1BB34A6F0003BB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A5883AC1BB34A6F0003BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A5883B11BB34A6F0003BB17 /* FilmgrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmgrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5883B11BB34A6F0003BB17 /* Filmstock.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Filmstock.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5883B51BB34A6F0003BB17 /* FilmgrainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmgrainTests.swift; sourceTree = "<group>"; };
 		0A5883B71BB34A6F0003BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A5883BC1BB34A6F0003BB17 /* FilmgrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmgrainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5883BC1BB34A6F0003BB17 /* Filmstock.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Filmstock.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5883C01BB34A6F0003BB17 /* FilmgrainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmgrainUITests.swift; sourceTree = "<group>"; };
 		0A5883C21BB34A6F0003BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AC604191BBE16C20052B384 /* CameraCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraCell.swift; sourceTree = "<group>"; };
@@ -123,9 +123,9 @@
 		0A58839E1BB34A6F0003BB17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A58839D1BB34A6F0003BB17 /* Filmgrain.app */,
-				0A5883B11BB34A6F0003BB17 /* FilmgrainTests.xctest */,
-				0A5883BC1BB34A6F0003BB17 /* FilmgrainUITests.xctest */,
+				0A58839D1BB34A6F0003BB17 /* Filmstock.app */,
+				0A5883B11BB34A6F0003BB17 /* Filmstock.xctest */,
+				0A5883BC1BB34A6F0003BB17 /* Filmstock.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A58839C1BB34A6E0003BB17 /* Filmgrain */ = {
+		0A58839C1BB34A6E0003BB17 /* Filmstock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A5883C51BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "Filmgrain" */;
+			buildConfigurationList = 0A5883C51BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "Filmstock" */;
 			buildPhases = (
 				0A5883991BB34A6E0003BB17 /* Sources */,
 				0A58839A1BB34A6E0003BB17 /* Frameworks */,
@@ -184,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = Filmgrain;
+			name = Filmstock;
 			productName = Filmgrain;
-			productReference = 0A58839D1BB34A6F0003BB17 /* Filmgrain.app */;
+			productReference = 0A58839D1BB34A6F0003BB17 /* Filmstock.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A5883B01BB34A6F0003BB17 /* FilmgrainTests */ = {
+		0A5883B01BB34A6F0003BB17 /* FilmstockTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A5883C81BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "FilmgrainTests" */;
+			buildConfigurationList = 0A5883C81BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "FilmstockTests" */;
 			buildPhases = (
 				0A5883AD1BB34A6F0003BB17 /* Sources */,
 				0A5883AE1BB34A6F0003BB17 /* Frameworks */,
@@ -202,14 +202,14 @@
 			dependencies = (
 				0A5883B31BB34A6F0003BB17 /* PBXTargetDependency */,
 			);
-			name = FilmgrainTests;
+			name = FilmstockTests;
 			productName = FilmgrainTests;
-			productReference = 0A5883B11BB34A6F0003BB17 /* FilmgrainTests.xctest */;
+			productReference = 0A5883B11BB34A6F0003BB17 /* Filmstock.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0A5883BB1BB34A6F0003BB17 /* FilmgrainUITests */ = {
+		0A5883BB1BB34A6F0003BB17 /* FilmstockUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A5883CB1BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "FilmgrainUITests" */;
+			buildConfigurationList = 0A5883CB1BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "FilmstockUITests" */;
 			buildPhases = (
 				0A5883B81BB34A6F0003BB17 /* Sources */,
 				0A5883B91BB34A6F0003BB17 /* Frameworks */,
@@ -220,9 +220,9 @@
 			dependencies = (
 				0A5883BE1BB34A6F0003BB17 /* PBXTargetDependency */,
 			);
-			name = FilmgrainUITests;
+			name = FilmstockUITests;
 			productName = FilmgrainUITests;
-			productReference = 0A5883BC1BB34A6F0003BB17 /* FilmgrainUITests.xctest */;
+			productReference = 0A5883BC1BB34A6F0003BB17 /* Filmstock.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -248,7 +248,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0A5883981BB34A6E0003BB17 /* Build configuration list for PBXProject "Filmgrain" */;
+			buildConfigurationList = 0A5883981BB34A6E0003BB17 /* Build configuration list for PBXProject "Filmstock" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -261,9 +261,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A58839C1BB34A6E0003BB17 /* Filmgrain */,
-				0A5883B01BB34A6F0003BB17 /* FilmgrainTests */,
-				0A5883BB1BB34A6F0003BB17 /* FilmgrainUITests */,
+				0A58839C1BB34A6E0003BB17 /* Filmstock */,
+				0A5883B01BB34A6F0003BB17 /* FilmstockTests */,
+				0A5883BB1BB34A6F0003BB17 /* FilmstockUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -338,12 +338,12 @@
 /* Begin PBXTargetDependency section */
 		0A5883B31BB34A6F0003BB17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0A58839C1BB34A6E0003BB17 /* Filmgrain */;
+			target = 0A58839C1BB34A6E0003BB17 /* Filmstock */;
 			targetProxy = 0A5883B21BB34A6F0003BB17 /* PBXContainerItemProxy */;
 		};
 		0A5883BE1BB34A6F0003BB17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0A58839C1BB34A6E0003BB17 /* Filmgrain */;
+			target = 0A58839C1BB34A6E0003BB17 /* Filmstock */;
 			targetProxy = 0A5883BD1BB34A6F0003BB17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -459,7 +459,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinmcgladdery.Filmgrain;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Filmstock;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -474,7 +474,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinmcgladdery.Filmgrain;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Filmstock;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -486,8 +486,8 @@
 				INFOPLIST_FILE = FilmgrainTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.mcgladdery.FilmgrainTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Filmgrain.app/Filmgrain";
+				PRODUCT_NAME = Filmstock;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Filmstock.app/Filmstock";
 			};
 			name = Debug;
 		};
@@ -498,8 +498,8 @@
 				INFOPLIST_FILE = FilmgrainTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.mcgladdery.FilmgrainTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Filmgrain.app/Filmgrain";
+				PRODUCT_NAME = Filmstock;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Filmstock.app/Filmstock";
 			};
 			name = Release;
 		};
@@ -509,7 +509,7 @@
 				INFOPLIST_FILE = FilmgrainUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.mcgladdery.FilmgrainUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Filmstock;
 				TEST_TARGET_NAME = Filmgrain;
 				USES_XCTRUNNER = YES;
 			};
@@ -521,7 +521,7 @@
 				INFOPLIST_FILE = FilmgrainUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.mcgladdery.FilmgrainUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Filmstock;
 				TEST_TARGET_NAME = Filmgrain;
 				USES_XCTRUNNER = YES;
 			};
@@ -530,7 +530,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A5883981BB34A6E0003BB17 /* Build configuration list for PBXProject "Filmgrain" */ = {
+		0A5883981BB34A6E0003BB17 /* Build configuration list for PBXProject "Filmstock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A5883C31BB34A6F0003BB17 /* Debug */,
@@ -539,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A5883C51BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "Filmgrain" */ = {
+		0A5883C51BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "Filmstock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A5883C61BB34A6F0003BB17 /* Debug */,
@@ -548,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A5883C81BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "FilmgrainTests" */ = {
+		0A5883C81BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "FilmstockTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A5883C91BB34A6F0003BB17 /* Debug */,
@@ -557,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A5883CB1BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "FilmgrainUITests" */ = {
+		0A5883CB1BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "FilmstockUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A5883CC1BB34A6F0003BB17 /* Debug */,

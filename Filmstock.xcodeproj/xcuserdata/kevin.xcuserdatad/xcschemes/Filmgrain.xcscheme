@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A58839C1BB34A6E0003BB17"
-               BuildableName = "Filmgrain.app"
-               BlueprintName = "Filmgrain"
-               ReferencedContainer = "container:Filmgrain.xcodeproj">
+               BuildableName = "Filmstock.app"
+               BlueprintName = "Filmstock"
+               ReferencedContainer = "container:Filmstock.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A5883B01BB34A6F0003BB17"
-               BuildableName = "FilmgrainTests.xctest"
-               BlueprintName = "FilmgrainTests"
-               ReferencedContainer = "container:Filmgrain.xcodeproj">
+               BuildableName = "Filmstock.xctest"
+               BlueprintName = "FilmstockTests"
+               ReferencedContainer = "container:Filmstock.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A5883BB1BB34A6F0003BB17"
-               BuildableName = "FilmgrainUITests.xctest"
-               BlueprintName = "FilmgrainUITests"
-               ReferencedContainer = "container:Filmgrain.xcodeproj">
+               BuildableName = "Filmstock.xctest"
+               BlueprintName = "FilmstockUITests"
+               ReferencedContainer = "container:Filmstock.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A58839C1BB34A6E0003BB17"
-            BuildableName = "Filmgrain.app"
-            BlueprintName = "Filmgrain"
-            ReferencedContainer = "container:Filmgrain.xcodeproj">
+            BuildableName = "Filmstock.app"
+            BlueprintName = "Filmstock"
+            ReferencedContainer = "container:Filmstock.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A58839C1BB34A6E0003BB17"
-            BuildableName = "Filmgrain.app"
-            BlueprintName = "Filmgrain"
-            ReferencedContainer = "container:Filmgrain.xcodeproj">
+            BuildableName = "Filmstock.app"
+            BlueprintName = "Filmstock"
+            ReferencedContainer = "container:Filmstock.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A58839C1BB34A6E0003BB17"
-            BuildableName = "Filmgrain.app"
-            BlueprintName = "Filmgrain"
-            ReferencedContainer = "container:Filmgrain.xcodeproj">
+            BuildableName = "Filmstock.app"
+            BlueprintName = "Filmstock"
+            ReferencedContainer = "container:Filmstock.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -106,6 +106,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Filmstock"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
