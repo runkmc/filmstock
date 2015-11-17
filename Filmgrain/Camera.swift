@@ -10,7 +10,12 @@ import Foundation
 
 class Camera: NSObject, NSCoding {
   
-  var name: String
+  var name: String {
+    didSet {
+      if name.characters.count == 0 && oldValue.characters.count > 0
+        { name = oldValue }
+    }
+  }
   var notes: String
   var loaded: Bool
   
