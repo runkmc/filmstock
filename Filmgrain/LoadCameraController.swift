@@ -21,11 +21,7 @@ class LoadCameraController: UIViewController {
 
 		if button.titleForState(.Normal) == "Load Camera" {
 			camera?.loaded = true
-			if let newNotes = notesField.text {
-				camera?.notes = newNotes
-			} else {
-				camera?.notes = ""
-			}
+            camera?.notes = notesField.text ?? ""
 		}
 	}
 
