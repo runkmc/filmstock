@@ -10,30 +10,30 @@ import UIKit
 
 class CameraCell: UITableViewCell {
 
-  @IBOutlet weak var loadingButton: UIButton!
-  @IBOutlet weak var name: UILabel!
-  @IBOutlet weak var notes: UILabel!
-  var camera: Camera?
-  weak var parentController: CamerasViewController?
-  
-  @IBAction func cellButtonTapped(sender: UIButton) {
-    if sender.titleForState(.Normal) == "Unload" {
-      self.parentController!.unloadCamera(self.camera!)
-    } else {
-      self.parentController!.loadCamera(self.camera!)
-    }
-  }
-  
-  
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+	@IBOutlet weak var loadingButton: UIButton!
+	@IBOutlet weak var name: UILabel!
+	@IBOutlet weak var notes: UILabel!
+	var camera: Camera?
+	weak var parentController: CamerasViewController?
 
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+	@IBAction func cellButtonTapped(sender: UIButton) {
+		if sender.titleForState(.Normal) == "Unload" {
+			self.parentController!.unloadCamera(self.camera!)
+		} else {
+			self.parentController!.loadCamera(self.camera!)
+		}
+	}
 
-        // Configure the view for the selected state
-    }
+
+	override func awakeFromNib() {
+		super.awakeFromNib()
+		// Initialization code
+	}
+
+	override func setSelected(selected: Bool, animated: Bool) {
+		super.setSelected(selected, animated: animated)
+
+		// Configure the view for the selected state
+	}
 
 }
