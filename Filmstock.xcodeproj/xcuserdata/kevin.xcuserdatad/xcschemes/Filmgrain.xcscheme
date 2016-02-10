@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A5883B01BB34A6F0003BB17"
-               BuildableName = "Filmstock.xctest"
+               BuildableName = "FilmstockTests.xctest"
                BlueprintName = "FilmstockTests"
                ReferencedContainer = "container:Filmstock.xcodeproj">
             </BuildableReference>

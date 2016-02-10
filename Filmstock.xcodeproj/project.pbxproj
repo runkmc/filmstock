@@ -17,7 +17,6 @@
 		0A5883A61BB34A6F0003BB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5883A41BB34A6F0003BB17 /* Main.storyboard */; };
 		0A5883A81BB34A6F0003BB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A5883A71BB34A6F0003BB17 /* Assets.xcassets */; };
 		0A5883AB1BB34A6F0003BB17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5883A91BB34A6F0003BB17 /* LaunchScreen.storyboard */; };
-		0A5883C11BB34A6F0003BB17 /* FilmgrainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5883C01BB34A6F0003BB17 /* FilmgrainUITests.swift */; };
 		0A613D821C6BB8AA0024EEF3 /* CameraSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A613D811C6BB8AA0024EEF3 /* CameraSpec.swift */; };
 		0AC6041A1BBE16C20052B384 /* CameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC604191BBE16C20052B384 /* CameraCell.swift */; };
 		0AC6041C1BBE1C590052B384 /* AddCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6041B1BBE1C590052B384 /* AddCameraController.swift */; };
@@ -30,13 +29,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		0A5883B21BB34A6F0003BB17 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A5883951BB34A6E0003BB17 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A58839C1BB34A6E0003BB17;
-			remoteInfo = Filmgrain;
-		};
-		0A5883BD1BB34A6F0003BB17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A5883951BB34A6E0003BB17 /* Project object */;
 			proxyType = 1;
@@ -60,9 +52,6 @@
 		0A5883AC1BB34A6F0003BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A5883B11BB34A6F0003BB17 /* FilmstockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmstockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5883B71BB34A6F0003BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A5883BC1BB34A6F0003BB17 /* Filmstock.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Filmstock.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A5883C01BB34A6F0003BB17 /* FilmgrainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmgrainUITests.swift; sourceTree = "<group>"; };
-		0A5883C21BB34A6F0003BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A613D811C6BB8AA0024EEF3 /* CameraSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraSpec.swift; sourceTree = "<group>"; };
 		0AC604191BBE16C20052B384 /* CameraCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraCell.swift; sourceTree = "<group>"; };
 		0AC6041B1BBE1C590052B384 /* AddCameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCameraController.swift; sourceTree = "<group>"; };
@@ -91,13 +80,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A5883B91BB34A6F0003BB17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -118,7 +100,6 @@
 				0A0C3A921BBF324F00574371 /* iTunesArtwork@2x.png */,
 				0A58839F1BB34A6F0003BB17 /* Filmgrain */,
 				0A5883B41BB34A6F0003BB17 /* FilmgrainTests */,
-				0A5883BF1BB34A6F0003BB17 /* FilmgrainUITests */,
 				0A58839E1BB34A6F0003BB17 /* Products */,
 				0A3CF2DC1BB8CF1C00D389CB /* Fonts */,
 				307678CFAD32C21CCF4D3C80 /* Pods */,
@@ -131,7 +112,6 @@
 			children = (
 				0A58839D1BB34A6F0003BB17 /* Filmstock.app */,
 				0A5883B11BB34A6F0003BB17 /* FilmstockTests.xctest */,
-				0A5883BC1BB34A6F0003BB17 /* Filmstock.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,15 +143,6 @@
 			);
 			path = FilmgrainTests;
 			sourceTree = SOURCE_ROOT;
-		};
-		0A5883BF1BB34A6F0003BB17 /* FilmgrainUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0A5883C01BB34A6F0003BB17 /* FilmgrainUITests.swift */,
-				0A5883C21BB34A6F0003BB17 /* Info.plist */,
-			);
-			path = FilmgrainUITests;
-			sourceTree = "<group>";
 		};
 		0FCAFE6F6EAFF3327E2A79CF /* Frameworks */ = {
 			isa = PBXGroup;
@@ -231,24 +202,6 @@
 			productReference = 0A5883B11BB34A6F0003BB17 /* FilmstockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0A5883BB1BB34A6F0003BB17 /* FilmstockUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A5883CB1BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "FilmstockUITests" */;
-			buildPhases = (
-				0A5883B81BB34A6F0003BB17 /* Sources */,
-				0A5883B91BB34A6F0003BB17 /* Frameworks */,
-				0A5883BA1BB34A6F0003BB17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A5883BE1BB34A6F0003BB17 /* PBXTargetDependency */,
-			);
-			name = FilmstockUITests;
-			productName = FilmgrainUITests;
-			productReference = 0A5883BC1BB34A6F0003BB17 /* Filmstock.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -264,10 +217,6 @@
 						DevelopmentTeam = P3HAZUW5GC;
 					};
 					0A5883B01BB34A6F0003BB17 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 0A58839C1BB34A6E0003BB17;
-					};
-					0A5883BB1BB34A6F0003BB17 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 0A58839C1BB34A6E0003BB17;
 					};
@@ -288,7 +237,6 @@
 			targets = (
 				0A58839C1BB34A6E0003BB17 /* Filmstock */,
 				0A5883B01BB34A6F0003BB17 /* FilmstockTests */,
-				0A5883BB1BB34A6F0003BB17 /* FilmstockUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -310,13 +258,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0A5883AF1BB34A6F0003BB17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A5883BA1BB34A6F0003BB17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,14 +338,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A5883B81BB34A6F0003BB17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A5883C11BB34A6F0003BB17 /* FilmgrainUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -412,11 +345,6 @@
 			isa = PBXTargetDependency;
 			target = 0A58839C1BB34A6E0003BB17 /* Filmstock */;
 			targetProxy = 0A5883B21BB34A6F0003BB17 /* PBXContainerItemProxy */;
-		};
-		0A5883BE1BB34A6F0003BB17 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A58839C1BB34A6E0003BB17 /* Filmstock */;
-			targetProxy = 0A5883BD1BB34A6F0003BB17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -580,30 +508,6 @@
 			};
 			name = Release;
 		};
-		0A5883CC1BB34A6F0003BB17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FilmgrainUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.mcgladdery.FilmgrainUITests;
-				PRODUCT_NAME = Filmstock;
-				TEST_TARGET_NAME = Filmgrain;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		0A5883CD1BB34A6F0003BB17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FilmgrainUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.mcgladdery.FilmgrainUITests;
-				PRODUCT_NAME = Filmstock;
-				TEST_TARGET_NAME = Filmgrain;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -630,15 +534,6 @@
 			buildConfigurations = (
 				0A5883C91BB34A6F0003BB17 /* Debug */,
 				0A5883CA1BB34A6F0003BB17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A5883CB1BB34A6F0003BB17 /* Build configuration list for PBXNativeTarget "FilmstockUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A5883CC1BB34A6F0003BB17 /* Debug */,
-				0A5883CD1BB34A6F0003BB17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
