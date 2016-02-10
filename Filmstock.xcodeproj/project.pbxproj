@@ -18,6 +18,7 @@
 		0A5883A81BB34A6F0003BB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A5883A71BB34A6F0003BB17 /* Assets.xcassets */; };
 		0A5883AB1BB34A6F0003BB17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5883A91BB34A6F0003BB17 /* LaunchScreen.storyboard */; };
 		0A5883C11BB34A6F0003BB17 /* FilmgrainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5883C01BB34A6F0003BB17 /* FilmgrainUITests.swift */; };
+		0A613D821C6BB8AA0024EEF3 /* CameraSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A613D811C6BB8AA0024EEF3 /* CameraSpec.swift */; };
 		0AC6041A1BBE16C20052B384 /* CameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC604191BBE16C20052B384 /* CameraCell.swift */; };
 		0AC6041C1BBE1C590052B384 /* AddCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6041B1BBE1C590052B384 /* AddCameraController.swift */; };
 		0AC6789D1BBDAD4F00919733 /* CamerasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6789C1BBDAD4F00919733 /* CamerasViewController.swift */; };
@@ -57,11 +58,12 @@
 		0A5883A71BB34A6F0003BB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A5883AA1BB34A6F0003BB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A5883AC1BB34A6F0003BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A5883B11BB34A6F0003BB17 /* Filmstock.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Filmstock.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5883B11BB34A6F0003BB17 /* FilmstockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmstockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5883B71BB34A6F0003BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A5883BC1BB34A6F0003BB17 /* Filmstock.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Filmstock.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5883C01BB34A6F0003BB17 /* FilmgrainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmgrainUITests.swift; sourceTree = "<group>"; };
 		0A5883C21BB34A6F0003BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A613D811C6BB8AA0024EEF3 /* CameraSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraSpec.swift; sourceTree = "<group>"; };
 		0AC604191BBE16C20052B384 /* CameraCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraCell.swift; sourceTree = "<group>"; };
 		0AC6041B1BBE1C590052B384 /* AddCameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCameraController.swift; sourceTree = "<group>"; };
 		0AC6789C1BBDAD4F00919733 /* CamerasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CamerasViewController.swift; path = ../CamerasViewController.swift; sourceTree = "<group>"; };
@@ -128,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				0A58839D1BB34A6F0003BB17 /* Filmstock.app */,
-				0A5883B11BB34A6F0003BB17 /* Filmstock.xctest */,
+				0A5883B11BB34A6F0003BB17 /* FilmstockTests.xctest */,
 				0A5883BC1BB34A6F0003BB17 /* Filmstock.xctest */,
 			);
 			name = Products;
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				0A5883B71BB34A6F0003BB17 /* Info.plist */,
+				0A613D811C6BB8AA0024EEF3 /* CameraSpec.swift */,
 			);
 			path = FilmgrainTests;
 			sourceTree = SOURCE_ROOT;
@@ -225,7 +228,7 @@
 			);
 			name = FilmstockTests;
 			productName = FilmgrainTests;
-			productReference = 0A5883B11BB34A6F0003BB17 /* Filmstock.xctest */;
+			productReference = 0A5883B11BB34A6F0003BB17 /* FilmstockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		0A5883BB1BB34A6F0003BB17 /* FilmstockUITests */ = {
@@ -252,6 +255,7 @@
 		0A5883951BB34A6E0003BB17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Kevin McGladdery";
 				TargetAttributes = {
@@ -389,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A613D821C6BB8AA0024EEF3 /* CameraSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,10 +556,12 @@
 			baseConfigurationReference = 7EEFB6B712A5232FD02D12C8 /* Pods-FilmstockTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FilmgrainTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.mcgladdery.FilmgrainTests;
-				PRODUCT_NAME = Filmstock;
+				PRODUCT_NAME = FilmstockTests;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Filmstock.app/Filmstock";
 			};
 			name = Debug;
@@ -564,10 +571,11 @@
 			baseConfigurationReference = 7EEA44C0037634E2AE3012EE /* Pods-FilmstockTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FilmgrainTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.mcgladdery.FilmgrainTests;
-				PRODUCT_NAME = Filmstock;
+				PRODUCT_NAME = FilmstockTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Filmstock.app/Filmstock";
 			};
 			name = Release;
