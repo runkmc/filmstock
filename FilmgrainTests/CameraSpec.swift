@@ -16,8 +16,7 @@ class CameraSpec: QuickSpec {
         describe("A Camera") {
             let cam = Camera(name:"Nikon 1", notes:"Dropped it in a pool", loaded:true)
             it("has properties") {
-                
-                
+                expect(cam.name) == "Nikon 1"
             }
         }
     }
