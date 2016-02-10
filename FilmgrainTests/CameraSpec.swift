@@ -15,8 +15,10 @@ class CameraSpec: QuickSpec {
     override func spec() {
         describe("A Camera") {
             let cam = Camera(name:"Nikon 1", notes:"Dropped it in a pool", loaded:true)
+            
             it("has properties") {
                 expect(cam.name) == "Nikon 1"
+                expect(cam.notes) == "Dropped it in a pool"
             }
         }
     }
