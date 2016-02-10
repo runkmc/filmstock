@@ -19,6 +19,7 @@ class CameraSpec: QuickSpec {
             it("has properties") {
                 expect(cam.name) == "Nikon 1"
                 expect(cam.notes) == "Dropped it in a pool"
+                expect(cam.loaded) == true
             }
         }
     }
