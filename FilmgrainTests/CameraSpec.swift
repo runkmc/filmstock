@@ -21,6 +21,11 @@ class CameraSpec: QuickSpec {
                 expect(cam.notes) == "Dropped it in a pool"
                 expect(cam.loaded) == true
             }
+            
+            it("won't allow it's name to be an empty string") {
+                cam.name = ""
+                expect(cam.name) == "Nikon 1"
+            }
         }
     }
 }
